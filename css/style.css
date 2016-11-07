@@ -1,3 +1,22 @@
+ /*
+        
+		                /       \_____/       \ \
+		\ \             \       /     \       / /
+		 \ \_____        \_____/       \_____/ /
+		 / /*****\       /            / /    \ \
+		/ /*******\_____/              \ \__
+		\ \*******/     \       /***** /\_\
+/*		 \ \*****/       \_____/******* _____ 
+		 / /     \       /     \*******/     \ \
+/*		/ /       \_____/       \*****/       \ \
+		\ \       /*****\       /     \       / /
+		 \ \_____/*******\_____/       \_____/ /
+		  \_____ \*******/     \       / _____/
+/*		        \ \*****/       \_____/ /
+		         \_____ \       / _____/
+		               \ \_____/ /
+		                \_______/
+
 
 
 /*//////////////////
@@ -30,17 +49,22 @@ body {
 	width: 60px;
 	height: auto;
 	background-image: url(http://www.bigsound.buzz/assets/images/pattern-dots-tiny.svg);
-	border-top: 2px solid #ff2c2c;
-	border-bottom: 2px solid #ff2c2c;
-	border-left: 2px solid #ff2c2c;
-	border-right: 2px solid #ff2c2c;
+	border-top: 1px solid #ff2c2c;
+	border-bottom: 1px solid #ff2c2c;
+	border-left: 1px solid #ff2c2c;
+	border-right: 1px solid #ff2c2c;
+	position:fixed;
+    height: 100%;
+    top: 0;
 }
 
 .left-container {
 	width: 60px;
+	height: 413px;
+	position: absolute;
 	display: table-caption;
 	vertical-align: middle;
-	top: 50%;
+	top: 15%;
 }
 
 .left-container label {
@@ -67,37 +91,41 @@ body {
 /////////////////*/
 .TopLs-Container {
 	float: left;
-	width: 300px;
+	width: 298px;
+	margin-left: 60px;
 	font-weight: 500;
-	text-align: left;
-	border-right: 2px solid #ff2c2c;
+	border-right: 1px solid #ff2c2c;
 }
  
 .logo {
 	position: relative;
-	border-bottom: 2px solid #ff2c2c;
-	height: 230px;
+	border-bottom: 1px solid #ff2c2c;
+	height: 229px;
 	background-image: url(http://www.bigsound.buzz/assets/images/pattern-dots-dense.svg);
 }
 
 .logo h1 {
 	position: absolute;
+	width: 288px;
+	height: 178px;
     top: 25px;
     left: 5px;
     right: 5px;
     bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
     background-image: url(http://www.bigsound.buzz/assets/images/logo-buzz.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .holster {
+	width: 80px;
+	height: 15px;
 	top: 182px;
 	left: 50%;
 	background-image: url(http://www.bigsound.buzz/assets/images/by-bolster.svg);
 	background-position: bottom right;
-	width: 80px;
-	height: 15px;
 	z-index: 2000;
 }
 
@@ -109,38 +137,45 @@ body {
 
 .separator {
 	position: relative;
-	display: block;	
+	display: block;
+	height: 52px;
+	background-image: url(http://www.bigsound.buzz/assets/images/pattern-dots-tiny.svg);	
 }
 
 .separator-content {
-	height: 52px;
 	padding: 15px 0;
-	text-shadow: 0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc;
-	background-image: url(http://www.bigsound.buzz/assets/images/pattern-dots-dense.svg);
+	text-shadow: 0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc,0 0 4px #f7cccc;	
 	text-align: center;
 }
 
 .top li {
-	border: 2px solid #ff2c2c;
+	border: 1px solid #ff2c2c;
 }
 
 .row {
+	height: 72px;
+	display: block;
 	cursor: pointer;
 }
 
 .row:hover {
-	background-image: url(http://www.bigsound.buzz/assets/images/pattern-dots-dense.svg);
+	background-image: url(http://www.bigsound.buzz/assets/images/pattern-dots-tiny.svg);
 }
 .num {
 	width: 70px;
+	height: 70px;
+	display: inline-block;
 	text-align: center;
-	padding: 14px 0;
+	padding: 0px 0px;
 	border-right: 2px solid #ff2c2c;
 }
 
 .name {
-	padding: 14px 0 14px 14px;
+	width: 70px;
+	display: inline-block;
+	padding-top: 14px;
 	line-height: 42px;
+	text-align: left;
 }
 /***************
 *top-list modal
@@ -154,7 +189,7 @@ body {
     height: 492.8px;
     overflow: auto; /* Enable scroll if needed */
     background-color: #f7cccc;
-    border: 2px solid #ff2c2c;
+    border: 1px solid #ff2c2c;
 	text-align: center;
 	z-index: 0;
 }
@@ -180,5 +215,8 @@ body {
 /// MAIN-CONTAIN //
 /////////////////*/
 .main-container {
-	float: left;
+	border-top: 1px solid #ff2c2c;
+	border-bottom: 1px solid #ff2c2c;
+	border-left: 1px solid #ff2c2c;
+	border-right: 1px solid #ff2c2c;
 }
