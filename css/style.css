@@ -228,7 +228,9 @@ body {
 .record-container {
 	width: 929px;
 	height: 638px;
+	display: inline;
 	float: right;
+	position: fixed;
 }
 
 .record-head {
