@@ -19,8 +19,8 @@
 
 
 
-/*//////////////////
-///// GENERAL /////
+/*///////////////////
+///// GENERAL //////
 /////////////////*/
 * {
     box-sizing: inherit;
@@ -41,8 +41,8 @@ body {
 	letter-spacing: -.01em;	
 }
 
-/*//////////////////
-/// LEFT-CONTAIN //
+/*///////////////////
+/// LEFT-CONTAIN ///
 /////////////////*/
 .left {
 	float: left;
@@ -86,8 +86,18 @@ body {
 	cursor: pointer;
 }
 
-/*//////////////////
-///// TOP-LIST ////
+/*///////////////////
+/// MAIN-CONTAIN ///
+/////////////////*/
+.main-container {
+	border-top: 1px solid #ff2c2c;
+	border-bottom: 1px solid #ff2c2c;
+	border-left: 1px solid #ff2c2c;
+	border-right: 1px solid #ff2c2c;
+}
+
+/*///////////////////
+///// TOP-LIST /////
 /////////////////*/
 .TopLs-Container {
 	float: left;
@@ -181,8 +191,8 @@ body {
 *top-list modal
 ***************/
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    display: none; 
+    position: fixed;
     left: 0;
     top: 0;
     width: 950px;
@@ -211,12 +221,92 @@ body {
     cursor: pointer;
 }
 
-/*//////////////////
-/// MAIN-CONTAIN //
-/////////////////*/
-.main-container {
-	border-top: 1px solid #ff2c2c;
-	border-bottom: 1px solid #ff2c2c;
-	border-left: 1px solid #ff2c2c;
-	border-right: 1px solid #ff2c2c;
+
+/*/////////////////////
+// RECORD-CONTAINER //
+///////////////////*/
+.record-container {
+	width: 929px;
+	height: 638px;
+	float: right;
 }
+
+.record-head {
+	width: 929px;
+	height: 48px;
+	display: block;
+	position: fixed;
+	display: table-cell;		
+}
+
+.head-content a {	
+	text-align: center;
+	text-decoration:none;
+	font-size: 14px;
+	font-weight: 500;
+	color: #ff2c2c;
+	line-height: 46px;
+	cursor: pointer;		
+}
+
+.left-head-part, .right-head-part {
+	width:  259px;
+	height: 46px;
+	display: inline-table;
+}
+
+.pie {
+	display: table-cell;
+}
+
+.icon1 {
+	width: 28px;
+	height: 28px;
+	display: table-cell;
+	background-image: url(http://www.bigsound.buzz/assets/images/chart-pie.svg);
+	background-repeat: no-repeat;
+}
+
+.icon2 {
+	width: 28px;
+	height: 28px;
+	display: table-cell;
+	background-image: url(http://www.bigsound.buzz/assets/images/chart-bar.svg);
+	background-repeat: no-repeat;
+}
+
+.right-head-part {
+	float: right;
+}
+
+.info {
+	display: table-cell;
+}
+
+.icon3 {
+	width: 20px;
+	height: 26px;
+	display: table-cell;
+	background-image: url(http://www.bigsound.buzz/assets/images/icon-info.svg);
+	background-repeat: no-repeat;
+}
+
+.icon4 {
+	width: 28px;
+	height: 28px;
+	display: table-cell;
+	background-image: url(http://www.bigsound.buzz/assets/images/icon-share-hover.svg);
+	background-repeat: no-repeat;
+}
+
+.hidden-social {
+	/*display: none;*/
+
+}
+
+.hidden-social ul li {
+	list-style: none;
+}
+/*
+#fondImage { background-image : url(http://www.bigsound.buzz/assets/images/icons-share-fb.svg); width : 28px; height : 28px; }
+#fondImage:hover { background-image : url(http://www.bigsound.buzz/assets/images/icons-share-tw.svg); } */
