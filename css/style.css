@@ -312,3 +312,102 @@ body {
 /*
 #fondImage { background-image : url(http://www.bigsound.buzz/assets/images/icons-share-fb.svg); width : 28px; height : 28px; }
 #fondImage:hover { background-image : url(http://www.bigsound.buzz/assets/images/icons-share-tw.svg); } */
+
+/*/////////////////////
+////// TURNTABLE /////
+///////////////////*/
+.turnTable {
+	width: 929px;
+	height: 638px;
+}	
+
+.turntable-container {
+	width: 929px;
+	height: 638px;
+	display: block;
+}
+
+.vinyl {
+	width: 490px;
+	height: 490px;
+	display: block;
+	transform: translateX(50%) translateY(50%);
+}
+
+.spinning {
+	width: 485.773px;
+	height: 485.773px;
+	margin-top: -200px;
+	pointer-events: all;
+	border: 3px solid #ff2c2c;
+	box-sizing: content-box;
+	border-radius: 100%;
+	display: block;
+	background-color: transparent;
+	-moz-animation-play-state: running;
+	-moz-animation-name: spin;
+	-moz-animation-duration: 40s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+}
+
+	@-moz-keyframes spin {
+
+		0% {transform: rotate(0);}
+
+		100% {
+		    transform: rotate(360deg);}
+	}	    
+
+#record {
+	background: url(../img/recorbkg485*485.png);
+	cursor: pointer;
+}
+
+.label {
+    width: 184px;
+    height: 184px;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	box-sizing: border-box;
+	background-color: #F7CCCC;
+	transform: translateX(-50%) translateY(-50%);
+    border-radius: 100%;
+    border: 3px solid #ff2c2c;
+    color: #222;     
+} 
+
+.label::after {
+	content: '';
+	width: 18px;
+    height: 18px;
+    display: block;
+    position: relative;
+    top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+    border: 3px solid #ff2c2c;
+    border-radius: 100%;
+}
+
+.arm {
+	width: 307px;
+	height: 522px;
+	position: absolute;
+	display: block;
+	top: 50px;
+	right: 10px;
+	background-image: url(http://www.bigsound.buzz/assets/images/arm.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotate(21.5deg) ease-in-out;
+	transition: transform 1s cubic-bezier(.53,.03,.21,.96);
+	-ms-transform-origin: 158px 201px;
+	transform-origin: 158px 201px;
+}
+
+	.arm:hover {
+		transform: rotate(21.5deg);
+}		
