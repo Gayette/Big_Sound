@@ -162,8 +162,8 @@ body {
 	border: 1px solid #ff2c2c;
 }
 
-.row {
-	height: 72px;
+li .row  {
+	height: 70px;
 	display: block;
 	cursor: pointer;
 }
@@ -410,4 +410,5 @@ body {
 
 	.arm:hover {
 		transform: rotate(21.5deg);
-}		
+}
+
