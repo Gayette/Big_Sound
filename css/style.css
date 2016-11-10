@@ -141,17 +141,14 @@ body {
 
 .top {
 	list-style: none;
+	font-weight: bold;
 	margin: 0;
 	padding: 0;
 } 
 
 #liSeparator {
 	width: 298px;
-	top: 229px;
-	bottom: 100px;	
-	display: block;
 	position: fixed;
-	overflow: auto;
 }
 
 #separator {
@@ -169,6 +166,10 @@ body {
 
 .top li {
 	border: 1px solid #ff2c2c;
+}
+
+.list {
+
 }
 
 li .row  {
