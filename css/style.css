@@ -278,6 +278,10 @@ li .row  {
 	background-repeat: no-repeat;
 }
 
+.graph {
+	opacity: .5;
+}
+
 .icon2 {
 	width: 28px;
 	height: 28px;
@@ -421,3 +425,10 @@ li .row  {
 		transform: rotate(21.5deg);
 }
 
+.by {
+	float: right;
+	text-decoration: none;
+	color: #ff2c2c;
+	font-size: 24px;
+	font-weight: bold;
+}
