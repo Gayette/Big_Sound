@@ -145,7 +145,16 @@ body {
 	padding: 0;
 } 
 
-.separator {
+#liSeparator {
+	width: 298px;
+	top: 229px;
+	bottom: 100px;	
+	display: block;
+	position: fixed;
+	overflow: auto;
+}
+
+#separator {
 	position: relative;
 	display: block;
 	height: 52px;
@@ -191,7 +200,7 @@ li .row  {
 *top-list modal
 ***************/
 .modal {
-    display: none; 
+ 	display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -201,7 +210,7 @@ li .row  {
     background-color: #f7cccc;
     border: 1px solid #ff2c2c;
 	text-align: center;
-	z-index: 0;
+	z-index: 1;
 }
 /* Modal Content/Box */
 .modal-content {
@@ -211,7 +220,8 @@ li .row  {
 .close {
     width: 80px;
 	height: 80px;
-
+	float: right;
+	cursor: pointer;
 }
 
 .close:hover,
@@ -220,7 +230,6 @@ li .row  {
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /*/////////////////////
 // RECORD-CONTAINER //
